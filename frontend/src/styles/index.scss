@@ -9,6 +9,10 @@ body {
     padding: 70px 30px;
     max-width: $breakpoint-wide;
     margin: auto;
+
+    @media (max-width: $breakpoint-tablet) {
+        padding: 70px 15px;
+    }
 }
 
 a {
