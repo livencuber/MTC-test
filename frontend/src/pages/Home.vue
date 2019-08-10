@@ -6,6 +6,9 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex';
+
 import Games from '@/components/Games/Games.vue';
 
 export default {
@@ -13,24 +16,12 @@ export default {
     Games,
   },
 
-  data() {
-    return {
-      games: [
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-        { name: 'Hearthstone', genre: 'Карточные' },
-      ],
-    };
+  computed: {
+    ...mapState('games', {
+      games: state => state.games,
+    }),
   },
+
 };
 </script>
 
