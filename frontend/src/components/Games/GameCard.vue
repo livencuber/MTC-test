@@ -1,5 +1,5 @@
 <template>
-  <div class="game-card">
+  <div class="game-card" @click="showDetails">
     <div class="game-card__image">
     </div>
     <div class="game-card__body">
@@ -12,6 +12,12 @@
 <script>
 export default {
   props: ['game'],
+
+  methods: {
+    showDetails() {
+      this.$router.push({ name: 'game', params: { id: this.game.id } });
+    },
+  },
 };
 </script>
 

@@ -3,18 +3,10 @@ export default {
 
   state: {
     games: [
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
-      { name: 'Hearthstone', genre: 'Карточные' },
+      { id: 1, name: 'Hearthstone', genre: 'Карточные' },
+      { id: 2, name: 'Hearthstone', genre: 'Карточные' },
+      { id: 3, name: 'Hearthstone', genre: 'Карточные' },
+      { id: 4, name: 'Hearthstone', genre: 'Карточные' },
     ],
   },
 };
